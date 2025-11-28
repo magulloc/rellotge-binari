@@ -1,0 +1,62 @@
+/* Estils generals */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Contenidor principal del popup */
+#popup-container {
+  width: 150px;
+  height: 300px;
+  padding: 5px;
+  background: #1e1e1e; /* Fons del popup */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Separació interna */
+  box-sizing: border-box;
+}
+
+/* Contenidor del canvas i el botó */
+#canvas-wrapper {
+  background: #1e1e1e; /* Igual que el fons principal */
+  border-radius: 8px;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Necessari per posicionar el botó */
+  overflow: hidden;
+}
+
+/* Assegura que el canvas es mostri correctement */
+#canvas-wrapper canvas {
+  z-index: 1;
+  display: block;
+}
+
+/* Botó d’opcions */
+#canvas-wrapper .icon-button {
+  position: absolute;
+  right: 5px;
+  bottom: -5px;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* Color base de la icona */
+.icon-button {
+  color: #7c7d80;
+}
+
+/* Color quan el cursor passa per sobre */
+.icon-button:hover {
+  color: #e7e7e7;
+}

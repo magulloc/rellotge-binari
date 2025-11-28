@@ -1,0 +1,26 @@
+body {
+    background-color: #23222b;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type="checkbox"],
+input[type="color"] {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    width: 22px;
+    height: 22px;
+    border: none;
+    padding: 0;
+    background: none; /* Evita estils imposats pels navegadors */
+}

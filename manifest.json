@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Rellotje binari",
+  "version": "1.0",
+  "description": "Mostra hora, minuts i segons en format binari",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Rellotge binari"
+  },
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "icons": {
+    "16": "/icons/icon.png"
+  },
+  "permissions": ["storage"]
+}
